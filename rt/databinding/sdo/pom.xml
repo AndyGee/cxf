@@ -25,9 +25,9 @@
     <url>http://cxf.apache.org</url>
 
     <parent>
-        <groupId>org.apache.cxf</groupId>
+        <groupId>org.apache.tomee.patch</groupId>
         <artifactId>cxf-parent</artifactId>
-        <version>2.6.17-TT.2-SNAPSHOT</version>
+        <version>2.6.17-TomEE</version>
         <relativePath>../../../parent/pom.xml</relativePath>
     </parent>
 
@@ -59,18 +59,18 @@
         </dependency>
 
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-rt-core</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-tools-wsdlto-core</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
@@ -83,31 +83,31 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-testutils</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-tools-wsdlto-frontend-jaxws</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-rt-transports-local</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-rt-transports-http</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-rt-frontend-jaxws</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
@@ -132,7 +132,7 @@
     <build>
         <plugins>
             <plugin>
-                 <groupId>org.apache.cxf</groupId>
+                 <groupId>org.apache.tomee.patch</groupId>
                  <artifactId>cxf-codegen-plugin</artifactId>
                  <version>${project.version}</version>
                  <executions>

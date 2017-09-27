@@ -18,15 +18,15 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.apache.cxf.samples</groupId>
+    <groupId>org.apache.tomee.patch.samples</groupId>
     <artifactId>jms_pubsub</artifactId>
     <name>JMS Transport Publish/Subscribe Demo using Document-Literal Style</name>
     <description>JMS Transport Publish/Subscribe Demo using Document-Literal Style</description>
-    <version>2.6.17-TT.1-SNAPSHOT</version>
+    <version>2.6.17-TomEE</version>
    <parent>
-        <groupId>org.apache.cxf.samples</groupId>
+        <groupId>org.apache.tomee.patch.samples</groupId>
         <artifactId>cxf-samples</artifactId>
-        <version>2.6.17-TT.1-SNAPSHOT</version>
+        <version>2.6.17-TomEE</version>
     </parent>
 
     <properties>
@@ -44,9 +44,9 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.apache.cxf</groupId>
+                <groupId>org.apache.tomee.patch</groupId>
                 <artifactId>cxf-codegen-plugin</artifactId>
-                <version>2.6.17-TT.1-SNAPSHOT</version>
+                <version>2.6.17-TomEE</version>
                 <executions>
                     <execution>
                         <id>generate-sources</id>
@@ -145,14 +145,14 @@
     </profiles>
     <dependencies>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-rt-frontend-jaxws</artifactId>
-            <version>2.6.17-TT.1-SNAPSHOT</version>
+            <version>2.6.17-TomEE</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-rt-transports-jms</artifactId>
-            <version>2.6.17-TT.1-SNAPSHOT</version>
+            <version>2.6.17-TomEE</version>
         </dependency>
         <dependency>
             <groupId>org.apache.activemq</groupId>

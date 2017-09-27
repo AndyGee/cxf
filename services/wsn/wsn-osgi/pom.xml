@@ -18,29 +18,29 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.apache.cxf.services.wsn</groupId>
+    <groupId>org.apache.tomee.patch.services.wsn</groupId>
     <artifactId>cxf-services-wsn-osgi</artifactId>
     <packaging>bundle</packaging>
-    <version>2.6.17-TT.2-SNAPSHOT</version>
+    <version>2.6.17-TomEE</version>
     <name>Apache CXF WSN OSGi</name>
     <description>Apache CXF WSN Full OSGi</description>
     <url>http://cxf.apache.org</url>
 
     <parent>
-        <groupId>org.apache.cxf</groupId>
+        <groupId>org.apache.tomee.patch</groupId>
         <artifactId>cxf-parent</artifactId>
-        <version>2.6.17-TT.2-SNAPSHOT</version>
+        <version>2.6.17-TomEE</version>
         <relativePath>../../../parent/pom.xml</relativePath>
     </parent>
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.cxf.services.wsn</groupId>
+            <groupId>org.apache.tomee.patch.services.wsn</groupId>
             <artifactId>cxf-services-wsn-core</artifactId>
             <version>${project.version}</version>
             <exclusions>
                 <exclusion>
-                    <groupId>org.apache.cxf</groupId>
+                    <groupId>org.apache.tomee.patch</groupId>
                     <artifactId>cxf-api</artifactId>
                 </exclusion>
             </exclusions>

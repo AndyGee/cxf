@@ -25,9 +25,9 @@
     <url>http://cxf.apache.org</url>
 
     <parent>
-        <groupId>org.apache.cxf</groupId>
+        <groupId>org.apache.tomee.patch</groupId>
         <artifactId>cxf-parent</artifactId>
-        <version>2.6.17-TT.2-SNAPSHOT</version>
+        <version>2.6.17-TomEE</version>
         <relativePath>../../../parent/pom.xml</relativePath>
     </parent>
 
@@ -35,40 +35,40 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-tools-validator</artifactId>
             <version>${project.version}</version>
             <optional>true</optional>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
-                    <groupId>org.apache.cxf</groupId>
+                    <groupId>org.apache.tomee.patch</groupId>
                     <artifactId>cxf-rt-core</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>org.apache.cxf</groupId>
+                    <groupId>org.apache.tomee.patch</groupId>
                     <artifactId>cxf-rt-databinding-jaxb</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>org.apache.cxf</groupId>
+                    <groupId>org.apache.tomee.patch</groupId>
                     <artifactId>cxf-rt-bindings-soap</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-tools-common</artifactId>
             <version>${project.version}</version>
             <optional>true</optional>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
-                    <groupId>org.apache.cxf</groupId>
+                    <groupId>org.apache.tomee.patch</groupId>
                     <artifactId>cxf-rt-core</artifactId>
                 </exclusion>
             </exclusions>
@@ -80,13 +80,13 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-rt-databinding-jaxb</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-testutils</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>

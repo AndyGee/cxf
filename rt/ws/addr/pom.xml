@@ -25,9 +25,9 @@
     <url>http://cxf.apache.org</url>
 
     <parent>
-        <groupId>org.apache.cxf</groupId>
+        <groupId>org.apache.tomee.patch</groupId>
         <artifactId>cxf-parent</artifactId>
-        <version>2.6.17-TT.2-SNAPSHOT</version>
+        <version>2.6.17-TomEE</version>
         <relativePath>../../../parent/pom.xml</relativePath>
     </parent>
 
@@ -71,18 +71,18 @@
         </dependency>
 
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-api</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-rt-bindings-soap</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.cxf</groupId>
+            <groupId>org.apache.tomee.patch</groupId>
             <artifactId>cxf-rt-ws-policy</artifactId>
             <version>${project.version}</version>
         </dependency>

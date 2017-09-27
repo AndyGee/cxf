@@ -19,9 +19,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.apache.cxf</groupId>
+    <groupId>org.apache.tomee.patch</groupId>
     <artifactId>cxf</artifactId>
-    <version>2.6.17-TT.2-SNAPSHOT</version>
+    <version>2.6.17-TomEE</version>
     <name>Apache CXF</name>
     <description>Apache CXF is an open-source services framework that aids in
     the development of services using front-end programming APIs, like JAX-WS
@@ -31,11 +31,11 @@
     <packaging>pom</packaging>
 
     <scm>
-        <connection>scm:git:https://github.com/tomitribe/cxf.git</connection>
-        <developerConnection>scm:git:https://github.com/tomitribe/cxf.git</developerConnection>
-        <url>scm:git:https://github.com/tomitribe/cxf.git</url>
-      <tag>HEAD</tag>
-  </scm>
+        <connection>scm:git:http://git-wip-us.apache.org/repos/asf/cxf.git</connection>
+        <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/cxf.git</developerConnection>
+        <url>scm:git:https://git-wip-us.apache.org/repos/asf/cxf.git</url>
+    </scm>
+
     <issueManagement>
         <system>jira</system>
         <url>https://issues.apache.org/jira/browse/CXF</url>
@@ -52,25 +52,30 @@
         <cxf.jdk.version>1.6</cxf.jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <site.deploy.url>scp://people.apache.org/www/cxf.apache.org/maven-site</site.deploy.url>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.5</maven.compiler.source>
+        <maven.compiler.target>1.5</maven.compiler.target>
     </properties>
 
     <distributionManagement>
         <repository>
-            <id>tomitribe.releases.https</id>
-            <name>Tomitribe Release Distribution Repository</name>
-            <url>https://repository.tomitribe.com/service/local/staging/deploy/maven2</url>
+            <id>apache.releases.https</id>
+            <name>Apache Release Distribution Repository</name>
+            <url>https://repository.apache.org/service/local/staging/deploy/maven2</url>
         </repository>
-
         <snapshotRepository>
-            <id>tomitribe.snapshots.https</id>
-            <name>Tomitribe Development Snapshot Repository</name>
-            <url>https://repository.tomitribe.com/content/repositories/snapshots-tomitribe</url>
+            <id>apache.snapshots.https</id>
+            <name>Apache Development Snapshot Repository</name>
+            <url>https://repository.apache.org/content/repositories/snapshots</url>
+            <!--uniqueVersion>false</uniqueVersion-->
         </snapshotRepository>
         <site>
-	  <id>apache.cxf.site</id>
-	  <url>${site.deploy.url}</url>
+            <id>apache.cxf.site</id>
+            <url>${site.deploy.url}</url>
         </site>
     </distributionManagement>
+
     <repositories>
           <repository>
               <id>apache.snapshots</id>
